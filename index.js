@@ -44,7 +44,7 @@ module.exports = {
 				helper = locator.resolveInstance(LocalizationHelper, config);
 			handlebars.registerHelper('l10n', helper.getHandlebarsHelper());
 		} catch (e) {
-			//nothing to do.
+			// nothing to do.
 		}
 	}
 };
