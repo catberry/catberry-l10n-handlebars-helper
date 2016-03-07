@@ -30,18 +30,18 @@
 
 'use strict';
 
-var LocalizationHelper = require('./lib/LocalizationHelper');
+const LocalizationHelper = require('./lib/LocalizationHelper');
 
 module.exports = {
+
 	/**
 	 * Registers all localization components in service locator.
 	 * @param {ServiceLocator} locator Catberry's service locator.
 	 */
-	register: function (locator) {
-		var config = locator.resolve('config');
+	register(locator) {
 		try {
-			var handlebars = locator.resolve('handlebars'),
-				helper = locator.resolveInstance(LocalizationHelper, config);
+			const handlebars = locator.resolve('handlebars');
+			const helper = new LocalizationHelper(locator);
 			handlebars.registerHelper('l10n', helper.getHandlebarsHelper());
 		} catch (e) {
 			// nothing to do.
