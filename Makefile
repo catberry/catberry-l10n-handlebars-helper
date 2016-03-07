@@ -1,6 +1,6 @@
 all: lint
 
 lint:
-	./node_modules/.bin/jshint ./ && ./node_modules/.bin/jscs ./
+	./node_modules/.bin/eslint ./
 
 .PHONY: test

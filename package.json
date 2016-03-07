@@ -1,6 +1,6 @@
 {
 	"name": "catberry-l10n-handlebars-helper",
-	"version": "1.0.5",
+	"version": "2.0.0",
 	"author": "Denis Rechkunov <denis.rechkunov@gmail.com>",
 	"description": "Handlebars helper for Catberry localization plugin",
 	"homepage": "https://github.com/catberry/catberry-l10n-handlebars-helper",
@@ -19,16 +19,15 @@
 	},
 	"main": "./index.js",
 	"peerDependencies": {
-		"catberry-l10n": "^3.0.0 || ^4.0.0",
-		"catberry-handlebars": "^1.0.0 || ^2.0.0"
+		"catberry-l10n": "^5.0.0",
+		"catberry-handlebars": "^3.0.0"
 	},
 	"devDependencies": {
-		"jscs": "^2.5.1",
-		"jshint": "^2.8.0"
+		"eslint": "^2.0.0"
 	},
 
 	"engines": {
-		"node": ">=0.12"
+		"node": ">=4"
 	},
 
 	"scripts": {
