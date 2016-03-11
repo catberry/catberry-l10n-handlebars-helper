@@ -18,12 +18,8 @@
 		"url": "git://github.com/catberry/catberry-l10n-handlebars-helper.git"
 	},
 	"main": "./index.js",
-	"peerDependencies": {
-		"catberry-l10n": "^5.0.0",
-		"catberry-handlebars": "^3.0.0"
-	},
 	"devDependencies": {
-		"eslint": "^2.0.0"
+		"eslint": "^2.2.0"
 	},
 
 	"engines": {
@@ -31,7 +27,8 @@
 	},
 
 	"scripts": {
-		"test": "make"
+		"test": "./node_modules/.bin/eslint ./",
+		"lint-fix": "./node_modules/.bin/eslint ./ --fix"
 	},
 
 	"license": "MIT"
