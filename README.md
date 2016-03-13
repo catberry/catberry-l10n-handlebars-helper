@@ -2,6 +2,12 @@
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/catberry/main?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
 
+## Installation
+
+```bash
+npm install catberry-l10n-handlebars-helper --save
+```
+
 ## Description
 You can use Handlebars helper that puts localized value wherever you want:
 
